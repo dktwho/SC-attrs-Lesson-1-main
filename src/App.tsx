@@ -8,9 +8,9 @@ function App() {
             <Title>Styled-components <span>.attrs</span> method</Title>
 
             <Form>
-                <Field type={'email'} />
-                <Field type={'password'}/>
-                <Field type={'text'}/>
+                <Field type={'email'} placeholder={'email'} />
+                <Field type={'password'} placeholder={'password'}/>
+                <Field type={'date'} />
             </Form>
         </div>
     );
@@ -32,8 +32,9 @@ const Form = styled.form`
   max-width: 500px;
 `;
 
-const Field = styled.input.attrs(({type}) => ({
-    type: type
+const Field = styled.input.attrs(({type, placeholder}) => ({
+    type,
+    placeholder
 }))`
   padding: 5px 15px;
   margin: 10px 0;
