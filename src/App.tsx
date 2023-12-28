@@ -1,12 +1,10 @@
 import './App.css';
 import styled from 'styled-components';
 
-
 function App() {
     return (
         <div className="App">
             <Title>Styled-components <span>.attrs</span> method</Title>
-
             <Form>
                 <Field type={'email'} placeholder={'email'}/>
                 <Field type={'password'} placeholder={'password'}/>
